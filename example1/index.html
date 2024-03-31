@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fetch data</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <center><h1>User dta</h1></center>
+    <button id="btn">click me</button>
+</body>
+
+    <script>
+        let Btn = document.querySelector("#btn") 
+        Btn.addEventListener("click", function(){
+            showData()
+        });
+        // Btn.addEventListener("click",showData;
+
+        function showData(){
+            fetch('https://reqres.in/api/users')
+                .then(function(res){
+                    return res.json();
+                })
+
+                .then(function(res){
+                    console.log(res.data);
+                })
+        }
+    </script>
+</html>
