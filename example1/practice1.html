@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice 1</title>
+    <style>
+        body{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>
+            User data
+        </h1>
+        <button id="btn">click me</button>
+    </center>
+
+
+    <script>
+        let Btn = document.querySelector("#btn");
+        Btn.addEventListener("click", showData)
+
+        function showData(){
+            fetch("https://reqres.in/api/users")
+            .then(function(res){
+                return res.json();
+            })
+            .then(function(res){
+                console.log(res.data);
+            })
+        }
+    </script>
+</body>
+</html>

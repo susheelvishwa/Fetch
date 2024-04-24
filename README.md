@@ -17,4 +17,4 @@ API means (application progermming interface)
 its a medium to communicate beetbeen two or more softwere
 
 if one softawre comunicate with onother software
-example whatsup jub hum starting me what up install krte he toh bo appliction hamse contact or camra ka accses mangati he and jab accses mil jati he toh fir bo communicate kr pate he
+example jub hum starting me what up install krte he toh bo appliction hamse contact or camara ka accses mangati he and jab accses mil jati he toh fir bo communicate kr pate he

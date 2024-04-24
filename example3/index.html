@@ -1,20 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fetch</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script:wght@400..700&family=Inter:wght@100..900&display=swap"
-        rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        #container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            margin-top: 5%;
+            margin-left: 5%;
+            margin-right: 5%;
+            grid-gap: 20px;
+        }
 
-    <link rel="stylesheet" href="./style.css">
+        #container>div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #cecece;
+        }
 
+        img {
+            width: 90%;
+            height: 225px;
+        }
+    </style>
+    <title>E Commerce</title>
 </head>
+
 <body>
-    <h1>jankit</h1>
-    <script src="./script.js"></script>
+    <h1>E Commerce</h1>
+    <div id="container"></div>
 </body>
+<script src="script.js"></script>
+
 </html>
