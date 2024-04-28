@@ -3,7 +3,8 @@ let container = document.getElementById("container");
 let data = [];
 
 // get the data
-fetch("https://reqres.in/api/users") //fetch is a promise and promises takes time
+fetch("https://reqres.in/api/users")
+//fetch is a promise and promises takes time
   .then(function (res) {
     return res.json();
   })
