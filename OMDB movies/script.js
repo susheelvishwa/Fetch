@@ -30,12 +30,16 @@ function displayData(moviesList) {
 
       let posterElement = document.createElement("img");
       posterElement.src = movie.Poster;
+
       let titleElement = document.createElement("p");
       titleElement.textContent = "Title : " + movie.Title;
+
       let yearElement = document.createElement("p");
       yearElement.textContent = "Year : " + movie.Year;
+
       let idElement = document.createElement("p");
       idElement.textContent = "IMDB-ID : " + movie.imdbID;
+      
       let typeElement = document.createElement("p");
       typeElement.textContent = "Type : " + movie.Type;
 
